@@ -28,10 +28,15 @@ body {
 
 .left-container {
     position: relative;
-    background-image: url("/marble.jpg");
+
     height: 100%;
     width: 40%;
+}
 
+.marble-bg {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
 }
 
 .logo-bg {
@@ -39,9 +44,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 10%;
+    height: 15%;
     width: 100%;
     top: 13%;
+    background-color: rgba(0, 0, 0, 0.678);
+
 }
 
 img[src="NSlogo.png"] {
@@ -68,7 +75,7 @@ img[src="NSlogo.png"] {
 
 .message {
     position: absolute;
-    top: -260px;
+    top: -240px;
     font-size: 1.4rem;
     text-align: left;
     width: 700px;
@@ -86,7 +93,7 @@ img[src="NSlogo.png"] {
 
 .form-header {
     position: absolute;
-    top: -5px;
+    top: 0px;
     font-size: 2rem;
     color: rgb(31, 31, 31);
 }
@@ -153,7 +160,7 @@ button[type="submit"]:hover {
 }
 
 .login-link:hover {
-    color: rgb(151, 151, 151);
+    color: rgb(65, 65, 65);
 }
 
 
