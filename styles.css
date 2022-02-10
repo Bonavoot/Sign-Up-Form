@@ -10,7 +10,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(39, 39, 39);
+    background-color: rgb(61, 61, 61);
 }
 
 body {
@@ -72,16 +72,20 @@ img[src="NSlogo.png"] {
 }
 
 .message {
-    position: relative;
     position: absolute;
+    align-self: center;
     margin-top: 20px;
     top: -240px;
+    left: 0px;
+    width: 90%;
+    height: auto;
+    margin-left: 35px;
     word-wrap: break-word;
     font-size: 1.4rem;
     text-align: left;
     color: rgb(53, 53, 53);
     font-weight: 600;
-    margin-right: 10px;
+
 }
 
 .look-forward {
