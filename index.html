@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="left-container">
+        <div class="logo-bg">
+        <img src="NSlogo.png" alt="logo"></img>
+    </div>
+    </div>
+    <div class="right-container">
+        <p class="message">Welcome to the Nunzio & Sons family! It is our honor to provide you with the 
+            highest quality materials, and our unbeatable customer services. Sign up <em> now </em> to get started.
+            <p>We look forward to it!</p>
+        </p>
+        <p class="form-header">Let's do this!</p>
+        <form>
+            <div class="left">
+                <label for="firstName">FIRST NAME</label>
+            <div>
+                <input type="text" id="firstName" name="firstName" placeholder="John" required> 
+                
+            </div>
+          <label for="email">EMAIL</label>
+          <div>
+              <input type="email" id="email" name="email" placeholder="name@nunzioandsons.com" required>
+          </div>
+          <label for="password">PASSWORD</label>
+          <div>
+              <input type="password" id="password" name="password" required>
+          </div>
+            </div>
+            <div class="right">
+                <label for="lastName">LAST NAME</label>
+          <div>
+              <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+          </div>
+          <label for="phone">PHONE NUMBER</label>
+          <div>
+              <input type="text" name="phone" id="phone" 
+              pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" 
+              placeholder="(xxx)xxx-xxxx" required>
+          </div>
+          <label for="confirm-password">CONFIRM PASSWORD</label>
+          <div>
+              <input type="password" id="confirm-password" name="confirm-password" min="6" required>
+          </div>
+            </div>
+            <button type="submit">CREATE ACCOUNT</button>
+        </form>
+    </div>
+</body>
+</html>
