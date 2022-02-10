@@ -19,7 +19,7 @@
     <div class="right-container">
         <p class="message">Welcome to the Nunzio & Sons family! It is our honor to provide you with the 
             highest quality materials, and our unbeatable customer services. Sign up <em> now </em> to get started.
-            <p>We look forward to it!</p>
+            <p class="look-forward">We look forward to it!</p>
         </p>
         <p class="form-header">Let's do this!</p>
         <form>
@@ -35,7 +35,7 @@
           </div>
           <label for="password">PASSWORD</label>
           <div>
-              <input type="password" id="password" name="password" required>
+              <input type="password" id="password" name="password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
           </div>
             </div>
             <div class="right">
@@ -45,16 +45,19 @@
           </div>
           <label for="phone">PHONE NUMBER</label>
           <div>
-              <input type="text" name="phone" id="phone" 
-              pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" 
+              <input name="phone" id="phone" 
+              pattern="^(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?$"
               placeholder="(xxx)xxx-xxxx" required>
           </div>
           <label for="confirm-password">CONFIRM PASSWORD</label>
           <div>
-              <input type="password" id="confirm-password" name="confirm-password" min="6" required>
+              <input type="password" id="confirm-password" name="confirm-password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
           </div>
             </div>
+            
             <button type="submit">CREATE ACCOUNT</button>
+            <p class="login">Already have an account? <a class="login-link">Log In</a></p>
+            
         </form>
     </div>
 </body>
