@@ -108,7 +108,7 @@ form {
     font-size: .8rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 .left,
