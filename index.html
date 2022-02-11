@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <div class="left-container">
@@ -36,7 +37,8 @@
           </div>
           <label for="password">PASSWORD</label>
           <div>
-              <input type="password" id="password" name="password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
+              <input type="password" id="password" name="password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" value="" required>
+              <div class="error" hidden >*Passwords do not match</div>
           </div>
             </div>
             <div class="right">
@@ -52,11 +54,11 @@
           </div>
           <label for="confirm-password">CONFIRM PASSWORD</label>
           <div>
-              <input type="password" id="confirm-password" name="confirm-password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
+              <input type="password" id="confirm-password" name="confirm-password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" value="" required>
           </div>
             </div>
             
-            <button type="submit">CREATE ACCOUNT</button>
+            <button name="createAccount" id="createAccount" type="submit">CREATE ACCOUNT</button>
             <p class="login">Already have an account? <a class="login-link">Log In</a></p>
             
         </form>

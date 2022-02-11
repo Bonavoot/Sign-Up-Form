@@ -69,6 +69,7 @@ img[src="NSlogo.png"] {
     box-shadow: 0 9px 6px -4px gray;
 }
 
+/* Header of right side */
 .message {
     position: absolute;
     align-self: center;
@@ -93,6 +94,8 @@ img[src="NSlogo.png"] {
     font-size: 1.4rem;
     color: rgb(53, 53, 53);
 }
+
+/* Start of form  */
 
 .form-header {
     position: absolute;
@@ -132,7 +135,12 @@ label {
     margin-bottom: -20px;
 }
 
+.error {
+    color: rgb(255, 46, 46);
+    position: absolute;
+}
 
+/* Form footer / buttons */
 
 button[type="submit"] {
     font-family: 'Nunito Sans', sans-serif;
